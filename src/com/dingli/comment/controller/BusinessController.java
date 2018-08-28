@@ -63,4 +63,14 @@ public class BusinessController {
 	public String backBu(){
 		return "redirect:getBusinessList";
 	}
+	
+	@RequestMapping("/queryBusiness")
+	public String queryBu(@RequestParam(value="pageIndex",defaultValue="1") Integer i,Business bu,Model m){
+		PageHelper.startPage(i, 3);
+		List<Business> list = businessSer.selectBu(bu);
+
+		PageInfo pageinfo = new PageInfo(list);
+		m.addAttribute("BusiPageList", pageinfo);
+		return "content/businessList";
+	}
 }

@@ -15,7 +15,7 @@
 </head>
 <body style="background: #e1e9eb;">
 <input type="hidden" name="basepath" value="${basepath}"  />
-		<form action="" id="mainForm" method="post">
+		<form action="queryBusiness" id="mainForm" method="post">
 			
 			<div class="right">
 				<div class="current">当前位置：<a href="#">内容管理</a> &gt; 商户管理</div>
@@ -29,7 +29,7 @@
 									<input name="title" id="title" value="" class="allInput" type="text"/>
 								</td>
 	                            <td style="text-align: right;" width="150">
-	                            	<input class="tabSub" value="查询" onclick="search('1');" type="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;
+	                            	<input class="tabSub" value="查询" onclick="" type="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;
 	                            	
 	                            	<input class="tabSub" value="添加" onclick="location.href='${basepath}/Addbusiness'" type="button"/>
 	                            	

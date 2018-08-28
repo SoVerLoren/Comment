@@ -97,7 +97,13 @@
     
     <include refid="Base_Column_List" />
     from comment
-    
+  </select>
+  <select id="selectByComment" parameterType="java.lang.String" resultMap="BaseResultMap">
+   
+    select 
+    <include refid="Base_Column_List" />
+    from comment
+    where comment like "%"#{comment}"%"
   </select>
   <select id="selectByExample" parameterType="com.dingli.comment.bean.CommentExample" resultMap="BaseResultMap">
     <!--

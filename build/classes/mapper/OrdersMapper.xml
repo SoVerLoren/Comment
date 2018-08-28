@@ -102,6 +102,8 @@
     
   </select>
   
+  
+  
   <select id="selectByExample" parameterType="com.dingli.comment.bean.OrdersExample" resultMap="BaseResultMap">
     <!--
       WARNING - @mbggenerated

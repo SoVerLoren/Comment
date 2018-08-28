@@ -21,4 +21,10 @@ public class CommentServiceImpl implements CommentService {
 		return commentMap.selectAllCom();
 	}
 
+	@Override
+	public List<Comment> selectCom(Comment com) {
+		
+		return  commentMap.selectByComment(com.getComment());
+	}
+
 }

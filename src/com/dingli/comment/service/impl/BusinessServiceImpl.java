@@ -57,4 +57,10 @@ public class BusinessServiceImpl implements BusinessService {
 		return budto;
 	}
 
+	@Override
+	public List<Business> selectBu(Business bu) {
+		
+		return bsmapper.selectByTitle(bu.getTitle());
+	}
+
 }

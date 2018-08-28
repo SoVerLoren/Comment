@@ -152,6 +152,13 @@
     </where>
   </select>
   
+  <select id="selectByTitle" parameterType="java.lang.String" resultMap="BaseResultMap">
+   
+    select 
+    <include refid="Base_Column_List" />
+    from business
+    where title like "%" #{title} "%"
+  </select>
    
   <select id="selectByExample" parameterType="com.dingli.comment.bean.BusinessExample" resultMap="BaseResultMap">
     <!--

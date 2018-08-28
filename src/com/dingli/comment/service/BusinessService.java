@@ -14,4 +14,6 @@ public interface BusinessService {
 	public List<BusinessDto> getBusListForApi(BusinessDto dto);
 
 	public BusinessDto getBusinessById(BusinessDto dto);
+
+	public List<Business> selectBu(Business bu);
 }

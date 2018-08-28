@@ -28,4 +28,12 @@ public class CommentController {
 		return "content/commentList";
 	}
 
+	@RequestMapping("/queryCom")
+	public String queryCom(@RequestParam(value="pageIndex",defaultValue="1")Integer i,Comment com,Model m){
+		PageHelper.startPage(i, 3);
+		List<Comment> list = comservice.selectCom(com);
+		PageInfo pageInfo = new PageInfo(list);
+		m.addAttribute("PageInfo", pageInfo);
+		return "content/commentList";
+	}
 }

@@ -15,7 +15,7 @@
 </head>
 <body style="background: #e1e9eb;">
 <input type="hidden" name="basepath" value="${basepath}"  />
-		<form action="" id="mainForm" method="post">
+		<form action="queryCom" id="mainForm" method="post">
 	
 			<div class="right">
 				<div class="current">当前位置：<a href="#">内容管理</a> &gt; 评论查询</div>
@@ -26,10 +26,10 @@
 							<tr>
 								<td width="80" align="right">评论内容：</td>
 								<td>
-									<input name="title" id="title" value="" class="allInput" type="text">
+									<input name="comment" id="title" value="" class="allInput" type="text">
 								</td>
 	                            <td style="text-align: right;" width="150">
-	                            	<input class="tabSub" value="查询" onclick="" type="button">&nbsp;&nbsp;&nbsp;&nbsp;
+	                            	<input class="tabSub" value="查询" onclick="" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;
 	                            </td>
 	       					</tr>
 						</tbody>
